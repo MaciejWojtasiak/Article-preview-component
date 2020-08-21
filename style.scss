@@ -68,13 +68,18 @@ p {
         flex-direction: column;
         width: 90%;
         height: 80%;
+
+        &__left {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+
+        &__right {
+            border-radius: 0 0 10px 10px;
+        }
     }
 
-    &__left {
-        width: 100%;
 
-        img {}
-    }
 }
 
 .showcase {
@@ -133,6 +138,27 @@ p {
         }
 
     }
+}
+
+@media (max-width: 575px) {
+    .showcase {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        &__text p {
+            font-size: 1.05em;
+        }
+
+        &__text h2 {
+            font-size: 1.2em;
+        }
+
+
+
+    }
+}
 }
 
 .share {
