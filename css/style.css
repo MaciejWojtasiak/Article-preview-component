@@ -13,7 +13,6 @@
 }
 
 body {
-  position: relative;
   width: 100vw;
   height: 100vh;
   font-size: 13px;
@@ -37,31 +36,30 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 60%;
-  height: 40%;
+  max-width: 700px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 10px;
   box-shadow: 10px 10px 36px -17px rgba(161, 116, 161, 0.71);
 }
 
 .card__left {
   position: relative;
-  flex: 2;
+  width: 40%;
+}
+
+.card__left img {
   width: 100%;
   height: 100%;
-  background-image: url("../images/drawers.jpg");
-  background-size: cover;
-  background-position: left;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .card__right {
   width: 100%;
   height: 100%;
-  flex: 3;
   background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .showcase {
@@ -76,6 +74,7 @@ p {
 }
 
 .showcase__person {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,18 +120,19 @@ p {
 .share {
   display: none;
   position: absolute;
-  top: 50%;
-  right: 16%;
+  top: -150%;
+  right: -17%;
   width: 200px;
   height: 40px;
   border-radius: 10px;
   background-color: var(--DesaturatedDarkBlue);
   transition: .3s;
+  z-index: 1;
 }
 
 .share span {
   position: relative;
-  bottom: -15px;
+  bottom: -14px;
   left: 90px;
   width: 0;
   height: 0;
