@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+:root {
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+  --GrayishBlue: hsl(212, 23%, 69%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-size: 13px;
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--LightGrayishBlue);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--VeryDarkGrayishBlue);
+}
+
+p {
+  color: var(--DesaturatedDarkBlue);
+}
+
+.card {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 10px 10px 36px -17px rgba(161, 116, 161, 0.71);
+}
+
+.card__left {
+  position: relative;
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/drawers.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+.card__right {
+  width: 100%;
+  height: 100%;
+  flex: 3;
+  background-color: white;
+}
+
+.showcase {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.showcase__text p {
+  margin: 15px 0;
+  font-size: .9em;
+}
+
+.showcase__person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.showcase__person__info {
+  display: flex;
+}
+
+.showcase__person__info img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.showcase__person__info .text {
+  margin-left: 10px;
+}
+
+.showcase__person__info p {
+  margin: 2px 0;
+}
+
+.showcase__person__icon {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: var(--LightGrayishBlue);
+  cursor: pointer;
+}
+
+.showcase__person__icon svg {
+  fill: #6E8098;
+}
+
+.showcase__person__icon--active {
+  background-color: var(--DesaturatedDarkBlue);
+}
+
+.showcase__person__icon--active svg {
+  fill: white;
+}
+
+.share {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 16%;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--DesaturatedDarkBlue);
+  transition: .3s;
+}
+
+.share span {
+  position: relative;
+  bottom: -15px;
+  left: 90px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid var(--DesaturatedDarkBlue);
+}
+
+.share ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.share ul li a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-underline: none;
+}
+
+.show {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
